@@ -1,6 +1,6 @@
 # PozzyAI Chat
 
-PozzyAI Chat is a privacy-focused web-based chat application that allows users to interact with the Mistral-7B language model without requiring user authentication. The application features a modern dark theme, responsive UI, and supports code generation in various programming languages.
+PozzyAI Chat is a privacy-focused web-based chat application that allows users to interact with the Mistral-7B language model (or any other model downloadable from Hugging Face) without requiring user authentication. The application features a modern dark theme, responsive UI, and supports code generation in various programming languages.
 
 ## Features
 - **AI-Powered Chat**: Interact with the Mistral-7B-Instruct-v0.2 language model.
@@ -37,7 +37,7 @@ The application automatically downloads the `mistral-7b-instruct-v0.2.Q4_K_M.ggu
    This script will start the Flask server, which will then serve the web interface and handle chat requests. The application will typically run on `http://0.0.0.0:80`.
 
 ## Limitations
-- The application does not support multiple clients simultaneously and may have issues when accessed from a remote location.
+- The application does not support multiple clients simultaneously (due to hardware limitations).
 - No user authentication is supported, and no user data is stored.
 - File uploads and downloads are not supported.
 - Code execution within the chat is not supported.
