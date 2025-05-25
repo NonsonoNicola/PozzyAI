@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with PozzyAI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+    <div id="chat-container">
+        <div class="header">
+            <h1>Chat with PozzyAI</h1>
+            <p>Your AI Assistant</p>
+            <div class="header-actions">
+                <button class="action-button" onclick="clearChat()">
+                    <span>Clear Chat</span>
+                </button>
+            </div>
+        </div>
+        <div id="messages"></div>
+        <div class="input-area">
+            <div class="input-container">
+                <textarea id="user-input" 
+                    placeholder="Type your message..." 
+                    maxlength="2000"
+                    rows="1"
+                    oninput="autoResize(this); updateCharCount(this);"
+                ></textarea>
+                <div class="char-count">0/2000</div>
+                <button onclick="sendMessage()" id="send-button">Send</button>
+            </div>
+            <div id="typing">PozzyAI is thinking...</div>
+        </div>
+    </div>
+    <div class="privacy-notice">
+        🔒 Your chat is private and temporary
+        <div class="privacy-tooltip">
+            All messages are stored only in your browser's temporary memory and will be permanently deleted when you close this tab. 
+            No data is stored on our servers.
+        </div>
+    </div>
+</body>
+</html>
